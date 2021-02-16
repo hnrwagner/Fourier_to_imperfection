@@ -153,9 +153,10 @@ X_merge = []
 
 The following equations are described in
 
-"A COLLECTION OF MANUFACTURING SPECIFIC GEOMETRIC IMPERFECTION, PROBABILISTIC AND DETERMINISTIC DESIGN EXAMPLES FOR CYLINDRICAL SHELLS UNDER AXIAL COMPRESSION"
+"Probabilistic and deterministic lower-bound design benchmarks for cylindrical shells under axial compression"
 
-Thin-Walled Structures 2019
+Thin-Walled Structures
+Volume 146, January 2020, 106451
 ###############################################################################
 ###############################################################################
 """
