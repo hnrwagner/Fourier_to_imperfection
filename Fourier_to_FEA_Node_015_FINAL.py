@@ -264,12 +264,12 @@ for i in range(0,na,1):
         elif (case == 2):
             for k in range(0,n1,1):
                 for l in range(0,n2,1):
-                    w[i][j] = w[i][j] + np.cos((k)*np.pi*x/myLength)*phim_mean[k][l]*np.cos((l)*y/myRadius) +eps_mean[k][l]*np.sin((l)*y/myRadius)
+                    w[i][j] = w[i][j] + np.cos((k)*np.pi*x/myLength)*(phim_mean[k][l]*np.cos((l)*y/myRadius) +eps_mean[k][l]*np.sin((l)*y/myRadius))
     
         elif (case == 3):
             for k in range(0,n1,1):
                 for l in range(0,n2,1):
-                    w[i][j] = w[i][j] + np.sin((k)*np.pi*x/myLength)*phim_mean[k][l]*np.cos((l)*y/myRadius) +eps_mean[k][l]*np.sin((l)*y/myRadius)
+                    w[i][j] = w[i][j] + np.sin((k)*np.pi*x/myLength)*(phim_mean[k][l]*np.cos((l)*y/myRadius) +eps_mean[k][l]*np.sin((l)*y/myRadius))
  
        
         w[i][j] = w[i][j] * myThickness
@@ -443,12 +443,12 @@ for k in range(0,2*rank,1):
             elif (case == 2):
                 for k in range(0,n1,1):
                     for l in range(0,n2,1):
-                        w[i][j] = w[i][j] + np.cos((k)*np.pi*x/myLength)*phim_mean[k][l]*np.cos((l)*y/myRadius) +eps_mean[k][l]*np.sin((l)*y/myRadius)
+                        w[i][j] = w[i][j] + np.cos((k)*np.pi*x/myLength)*(phim_mean[k][l]*np.cos((l)*y/myRadius) +eps_mean[k][l]*np.sin((l)*y/myRadius))
         
             elif (case == 3):
                 for k in range(0,n1,1):
                     for l in range(0,n2,1):
-                        w[i][j] = w[i][j] + np.sin((k)*np.pi*x/myLength)*phim_mean[k][l]*np.cos((l)*y/myRadius) +eps_mean[k][l]*np.sin((l)*y/myRadius)
+                        w[i][j] = w[i][j] + np.sin((k)*np.pi*x/myLength)*(phim_mean[k][l]*np.cos((l)*y/myRadius) +eps_mean[k][l]*np.sin((l)*y/myRadius))
      
            
             w[i][j] = w[i][j] * myThickness
